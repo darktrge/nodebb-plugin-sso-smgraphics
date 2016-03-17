@@ -156,7 +156,8 @@
 		var profile = {};
 		profile.id = data.user_id;
 		profile.username = data.username;
-		profile.displayName = data.name+' '+data.last_name;
+		profile.displayName = data.username;
+		profile.fullname = data.name+' '+data.last_name;
 		profile.emails = [{ value: data.email }];
 
 		// Do you want to automatically make somebody an admin? This line might help you do that...
