@@ -36,7 +36,7 @@
   "readme": "# NodeBB Oauth SSO\r\n\r\nNodeBB Plugin that allows users to login/register via SMgraphics.\r\n\r\n## Installation\r\n\r\n    npm install nodebb-plugin-sso-smgraphics",
   "readmeFilename": "README.md",
   "gitHead": "a4c93e3db13a19159590a0efa174e18d77148056",
-  "_id": "nodebb-plugin-sso-smgraphics@0.0.3",
+  "_id": "nodebb-plugin-sso-smgraphics@0.0.5",
   "_shasum": "500b52f65636aff47b596d714b89b72131e3cdc0",
   "_from": "nodebb-plugin-sso-smgraphics@*"
 }
