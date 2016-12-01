@@ -232,20 +232,22 @@
 		});
 	};
 
-	OAuth.deleteUserData = function(uid, callback) {
-		async.waterfall([
-			async.apply(User.getUserField, uid, constants.name + 'Id'),
-			function(oAuthIdToDelete, next) {
-				db.deleteObjectField(constants.name + 'Id:uid', oAuthIdToDelete, next);
-			}
-		], function(err) {
-			if (err) {
-				winston.error('[sso-smgraphics] Could not remove OAuthId data for uid ' + uid + '. Error: ' + err);
-				return callback(err);
-			}
-			callback(null, uid);
-		});
-	};
+    OAuth.deleteUserData = function(data, callback) {
+        var uid = data.uid;
+
+        async.waterfall([
+            async.apply(User.getUserField, uid, constants.name + 'Id'),
+            function(oAuthIdToDelete, next) {
+                db.deleteObjectField(constants.name + 'Id:uid', oAuthIdToDelete, next);
+            }
+        ], function(err) {
+            if (err) {
+                winston.error('[sso-smgraphics] Could not remove OAuthId data for uid ' + uid + '. Error: ' + err);
+                return callback(err);
+            }
+            callback(null, uid);
+        });
+    };
 
 	module.exports = OAuth;
 }(module));
