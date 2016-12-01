@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-sso-smgraphics",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "nodebb plugin for Smith Micro Graphics group Oauth2 service",
   "main": "index.js",
   "scripts": {
