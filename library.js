@@ -34,9 +34,9 @@
 				clientID: '',
 				clientSecret: '',
 				authorizationURL: 'https://pgoauth2.smithmicro.com/dialog/authorize',
-				tokenURL: 'http://10.128.146.71:3001/oauth/token'
+				tokenURL: 'http://avdc-pg-oauth01.smithmicro.com:3001/oauth/token'
 			},
-			userRoute: 'http://10.128.146.71:3001/api/userinfo',	// This is the address to your app's "user profile" API endpoint (expects JSON)
+			userRoute: 'http://avdc-pg-oauth01.smithmicro.com:3001/api/userinfo',	// This is the address to your app's "user profile" API endpoint (expects JSON)
 			'admin': {
 				'route': '/plugins/sso-smgraphics',
 				'icon': 'fa-smgraphics-square'
