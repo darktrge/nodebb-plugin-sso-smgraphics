@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-sso-smgraphics",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "nodebb plugin for Smith Micro Graphics group Oauth2 service",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/darktrge/nodebb-plugin-sso-smgraphics#readme",
   "dependencies": {
+    "npm": "^6.9.0",
     "passport-oauth": "~1.0.0"
   },
   "nbbpm": {
